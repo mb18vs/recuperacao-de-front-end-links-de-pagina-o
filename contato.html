@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div><h1>LOGOMARCA</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="pagina.html">pagina</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" method="post">
+        <fieldset>
+            <legend> identificação </legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo." maxlength="300">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha." maxlength="20">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu email." maxlength="50">
+            </p>
+            <p>Sexo: </p>
+            <p>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                <label for="nascimento">Data de nascimento: </label>
+                <input type="date" id="nascimento">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" placeholder="Digite nome da rua." maxlength="300">
+            </p>
+            <p>
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" min="0" max="99999">
+            </p>
+            <p>
+                <label for="estado">Estado:</label>
+                <select id="estado">
+                    <optgroup label="Região sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Mina Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>                           
+                    </optgroup>
+                   <optgroup label="Região norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="AC">Acre</option>
+                        <option value="RR">Roraima</option>
+                        <option value="RO">Rondonia</option>
+                        <option value="AP">Amapa</optioon>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup> 
+                    <optgroup label="Região nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="CE">Ceará</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="SE">Sergipe</option>
+                    <optgroup label="Centro Oeste"></optgroup>
+                        <option value="GO">Goias</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Groso do Sul</option> 
+                        <option VALUE="DF">Distrito Federal</option>                        
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

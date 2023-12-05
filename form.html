@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .pagination a {
+      color: #333;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid #ddd;
+      margin: 0 4px;
+    }
+
+    .pagination a:hover {
+      background-color: #ddd;
+    }
+
+    .pagination .active {
+      background-color: #e81da4;
+      color: #fff;
+    }
+  </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 50%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: #ffffff;
+      color: #333;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e81d97 4px solid;
+    }
+
+    header a {
+      color: #333;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    header ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      overflow: hidden;
+    }
+
+    header #logo {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    header #logo img {
+      width: 70%;
+    }
+
+    header #logo h1 {
+      display: inline;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header #logo img,
+    header #logo h1,
+    header #logo a {
+      float: left;
+      margin-top: 10px;
+    }
+
+    header #logo a {
+      margin-left: 2%;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    header .main-nav {
+      display: none;
+    }
+
+    header #menu-icon {
+      display: none;
+    }
+
+    section {
+      float: left;
+      width: 68%;
+      margin: 0 2% 0 0;
+    }
+
+    aside {
+      float: left;
+      width: 28%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      clear: both;
+      overflow: hidden;
+    }
+
+    .main h2 {
+      color: #333;
+    }
+
+    footer {
+      background: #666;
+      color: #fff;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      header #logo,
+      header #menu-icon,
+      header nav,
+      header #logo a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+      header {
+        padding-top: 20px;
+        position: relative;
+      }
+
+      header h1 {
+        margin-bottom: 20px;
+      }
+
+      header #logo img {
+        width: 50%;
+      }
+
+      header #logo h1 {
+        display: block;
+        font-size: 1.5em;
+        margin: 0;
+      }
+
+      header #menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      header a:hover,
+      header #menu-icon {
+        background-color: none;
+        color: none;
+      }
+
+      header nav {
+        display: none;
+      }
+
+      header #menu-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: #e8491d;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      header .main-nav {
+        display: inline;
+        width: 100%;
+        background-color: #333;
+      }
+
+      header .main-nav li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1px;
+      }
+
+      header .main-nav li a {
+        display: block;
+        padding: 10px 0;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div id="MARY'S CAKE">
+        <img src="logo.png" alt="Logo">
+        <h1>Meu Site</h1>
+        <a href="#">Home</a>
+      </div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#">Página Inicial</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <div id="menu-icon">☰</div>
+    </header>
+  </div>
+
+  <div class="container">
+    <section>
+      <div class="main">
+        <h2>Formulário de Contato</h2>
+        <form action="processar_formulario.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+
+    <aside>
+      <h2>Informações de Contato</h2>
+      <p>Entre em contato conosco para mais informações.</p>
+      <address>
+        <strong>Endereço:</strong><br>
+        Rua Parque São Pedro, 123<br>
+        Sarandi, Paraná<br>
+        CEP: 12345-678
+      </address>
+      <p><strong>Email:</strong> info@meusite.com</p>
+      <p><strong>Telefone:</strong> (123) 456-7890</p>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function () {
+      var mainNav = document.querySelector('.main-nav');
+      if (mainNav.style.display === '' || mainNav.style.display === 'none') {
+        mainNav.style.display = 'block';
+      } else {
+        mainNav.style.display = 'none';
+      }
+    });
+  </script>
+   <div class="pagination">
+    <a href="index.html" class="active">1</a>
+    <a href="contato.html">2</a>
+    <a href="foto.html">3</a>
+    <a href="form.html"  class="active">4</a>
+    <a href="#">5</a>
+  </div>
+</div>
+</body>
+</html>
